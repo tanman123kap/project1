@@ -64,7 +64,7 @@ app.post("/show", async (req, res) => {
     }
 });
 
-mongoose.connect("mongodb://localhost:27017/project").then(() => {
+mongoose.connect("mongodb+srv://tanu1829asdf:tamanna.2003@project1.xelrw.mongodb.net/entry?retryWrites=true&w=majority&appName=Project1").then(() => {
     console.log("database connected...");
     app.listen(5000, () => {
         console.log("Server live at port 5000...");
