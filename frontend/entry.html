@@ -54,7 +54,8 @@
                 status: isValidStatus ? status : undefined
             };
 
-            axios.post("http://localhost:5000/entry", entryData)
+            axios.defaults.withCredentials = true;
+            axios.post("https://project1-sooty-two.vercel.app/entry", entryData)
             .then(function(response) {
                 // Handle success response
                 console.log(response.data);
