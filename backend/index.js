@@ -6,7 +6,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: [""],
+        origin: ["https://project1-sooty-two.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
