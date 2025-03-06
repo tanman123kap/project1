@@ -72,7 +72,7 @@
             };
             console.log(entryData.date1);
 
-            axios.post("http://localhost:5000/show", entryData)
+            axios.post("https://project1-sooty-two.vercel.app/show", entryData)
             .then(function(response) {
                 // Handle success response
                 document.getElementById("response").innerText = JSON.stringify(response.data);
