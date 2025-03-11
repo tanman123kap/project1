@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const proModel = require("./model/project.model");
+require('dotenv').config();
 const cors = require("cors");
 const app = express();
 
@@ -64,7 +65,7 @@ app.post("/show", async (req, res) => {
     }
 });
 
-mongoose.connect("mongodb+srv://tanu1829asdf:tamanna.2003@project1.xelrw.mongodb.net/entry?retryWrites=true&w=majority&appName=Project1").then(() => {
+mongoose.connect(process.env.MONGO_URI).then(() => {
     console.log("database connected...");
     app.listen(5000, () => {
         console.log("Server live at port 5000...");
