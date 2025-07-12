@@ -4,7 +4,7 @@ A web application that allows users to enter data into a MongoDB database and al
 
 ## 🌐 Live Demo
 
-[project1-lpbh.vercel.app/entry.html](https://www.project1-lpbh.vercel.app/entry.html)
+[project1-lpbh.vercel.app/entry.html](https://project1-lpbh.vercel.app/entry.html)
 
 ## 🧱 Built With
 
